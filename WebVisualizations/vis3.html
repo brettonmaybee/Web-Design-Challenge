@@ -1,56 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <title>Visualization3</title>
-
+	<meta charset="UTF-8">
   
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="style.css" media="screen">
 
-  
-  <div class="container">
-    <!-- Content here -->
-  </div>
+	<title>Visualization 3</title>
+
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;"">
-      
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    
     <div class="container-fluid navbar-custom">
-      <a class="navbar-brand" href="Landing.html" id="income">Income</a>
-    </div>
-      
-    <div class="navbar-expand" id="navbarSupportedContent">
-     
-      <ul class="navbar-nav mr-auto">    
-      
-        <li class="nav-item dropdown">
-        
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-        
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Birth Rate</a>
-            <a class="dropdown-item" href="#">Child Mortality</a>
-            <a class="dropdown-item" href="#">Co2 Emmition</a>
-            <a class="dropdown-item" href="#">Life Expectancy</a>
-          </div>
-      
-        </li>
-      
-        <li class="nav-item">
-          <a class="nav-link" href="#">Data </a>
-        </li>
+			<a class="navbar-brand" href="Landing.html" id="income">Income</a>
+		</div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Comparison </a>          
-        </li>
-      
-      </ul>
-    </div>    
-  </nav> 
+		<div class="navbar-expand" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a aria-expanded="false" aria-haspopup="true" class=
+					"nav-link dropdown-toggle" data-toggle="dropdown" href="#" id=
+					"navbarDropdown" role="button">Plots <span class="caret"></span></a>
 
+					<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+						<a class="dropdown-item" href="vis1.html">Birth Rate</a> 
+						<a class="dropdown-item" href="vis2.html">Child Mortality</a> 
+						<a class="dropdown-item" href="vis3.html">Co2 Emmition</a> 
+						<a class="dropdown-item" href="vis4.html">Life Expectancy</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Data.html">Data</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Comparisons.html">Comparison</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<section class="row">
+			<div class="col-md-8">
+				<h1 class="text-center">Income vs Birth Rate</h1>
+
+				<hr class="my-8"/>
+        <img src="visualizations/income_vs_life.png" class="text-responsive"/>
+				<p>This plot shows the relationship between per capita income, and average life expectancy. As one might expect, those living in countries with the lowest incomes tend to have shorter lifes. It is interesting however that several moderately wealthy countries have a life expectancy below that of much poorer nations, and thus gives cause for forther analysis. The UN data used for this plot can be found at <a href="http://www.gapminder.org/data/">www.gapminder.org/data</a>.
+        </p>
+
+			</div>
+
+			<div class="col-md-4">
+				<div class="imageBloc-content">
+					<h2 class="text-center">Visualizations</h2>
+					<div id="thumbnails">
+						<a href="vis1.html"><img src="visualizations/income_vs_child.png" alt="Income vs Birth Rate" class="img-thumbnail"></a> 
+						<a href="vis2.html"><img src="visualizations/income_vs_child_mortality.png" alt="Income vs Birth Rate" class="img-thumbnail"></a> 
+						<a href="vis3.html"><img src="visualizations/income_vs_life.png" alt="Income vs Life Expectancy" class="img-thumbnail"></a> 
+						<a href="vis4.html"><img src="visualizations/income_vs_co2.png" alt="Income vs Co2" class="img-thumbnail"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>

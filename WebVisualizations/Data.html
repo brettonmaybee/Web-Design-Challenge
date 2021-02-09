@@ -1,52 +1,61 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href=
+	"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
-	<title>Data</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;"">
-      
-    <div class="container-fluid navbar-custom">
-      <a class="navbar-brand" href="Landing.html" id="income">Income</a>
-    </div>
-      
-    <div class="navbar-expand" id="navbarSupportedContent">
-     
-      <ul class="navbar-nav mr-auto">    
-      
-        <li class="nav-item dropdown">
-        
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-        
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="vis1.html">Birth Rate</a>
-            <a class="dropdown-item" href="vis2.html">Child Mortality</a>
-            <a class="dropdown-item" href="vis3.html">Co2 Emmition</a>
-            <a class="dropdown-item" href="vis4.html">Life Expectancy</a>
-          </div>
-      
-        </li>
-      
-        <li class="nav-item">
-          <a class="nav-link" href="Data.html">Data </a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="Comparisons.html">Comparison </a>          
-        </li>
-      
-      </ul>
-    </div>    
+	<title>Landing</title>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style=
+	"background-color: #e3f2fd;">
+		<div class="container-fluid navbar-custom">
+			<a class="navbar-brand" href="Landing.html" id="income">Income</a>
+		</div>
+
+
+		<div class="navbar-expand" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a aria-expanded="false" aria-haspopup="true" class=
+					"nav-link dropdown-toggle" data-toggle="dropdown" href="#" id=
+					"navbarDropdown" role="button">Plots <span class="caret"></span></a>
+
+					<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+						<a class="dropdown-item" href="vis1.html">Birth Rate</a> 
+						<a class="dropdown-item" href="vis2.html">Child Mortality</a> 
+						<a class="dropdown-item" href="vis3.html">Co2 Emmition</a> 
+						<a class="dropdown-item" href="vis4.html">Life Expectancy</a>
+					</div>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="Data.html">Data</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="Comparisons.html">Comparison</a>
+				</li>
+			</ul>
+		</div>
   </nav>
+  
+
 	<div class="container">
 		<article class="description-content row">
 			<div class="col-xs-12">
 				<h1 class="description-header">Data</h1>
 				<hr class="description-hr">
-				<p class="description-text">The following table includes the UN data collected for this analysis.</p>
+				<p class="description-text">The following table includes the <a href=
+          "www.gapminder.org/data/">data</a> collected for this analysis.</p>
 				<div class="table-responsive">
 					<table border="1" class="dataframe table table-striped table-hover">
 						<thead>
