@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="style.css" media="screen">
+
+	<title>Visualization 4</title>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style=
+	"background-color: #e3f2fd;">
+    
+    <div class="container-fluid navbar-custom">
+			<a class="navbar-brand" href="index.html" id="income">Income</a>
+		</div>
+
+		<div class="navbar-expand" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a aria-expanded="false" aria-haspopup="true" class=
+					"nav-link dropdown-toggle" data-toggle="dropdown" href="#" id=
+					"navbarDropdown" role="button">Plots <span class="caret"></span></a>
+
+					<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+						<a class="dropdown-item" href="vis1.html">Birth Rate</a> 
+						<a class="dropdown-item" href="vis2.html">Child Mortality</a> 
+						<a class="dropdown-item" href="vis3.html">Co2 Emmition</a> 
+						<a class="dropdown-item" href="vis4.html">Life Expectancy</a>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Data.html">Data</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Comparisons.html">Comparison</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<section class="row">
+			<div class="col-md-8">
+				<h1 class="text-center">Income vs co2 Emmisions</h1>
+
+				<hr class="my-8"/>
+        <img src="visualizations/income_vs_co2.png" class="text-responsive"/>
+				<p>This plot shows the relationship between per capita income, and tons of carbon dioxide emmited. 
+          There is a strong correlation between carbon emmisions and income. This is likely related to energy consumption considering most energy is produced by fossil fuels, and those with higher incomes can afford to consume more energy. I suspect that this may change in the future as wealthier nations transition to more renewable energy sources, if developing nations continue to rely heavily on less expensive energy sources such as coal. The UN data used for this plot can be found at <a href="http://www.gapminder.org/data/">www.gapminder.org/data</a>.
+        </p>
+
+			</div>
+
+			<div class="col-md-4">
+				<div class="imageBloc-content">
+					<h2 class="text-center">Visualizations</h2>
+					<div id="thumbnails">
+						<a href="vis1.html"><img src="visualizations/income_vs_child.png" alt="Income vs Birth Rate" class="img-thumbnail"></a> 
+						<a href="vis2.html"><img src="visualizations/income_vs_child_mortality.png" alt="Income vs Birth Rate" class="img-thumbnail"></a> 
+						<a href="vis3.html"><img src="visualizations/income_vs_life.png" alt="Income vs Life Expectancy" class="img-thumbnail"></a> 
+						<a href="vis4.html"><img src="visualizations/income_vs_co2.png" alt="Income vs Co2" class="img-thumbnail"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
